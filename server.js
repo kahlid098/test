@@ -47,6 +47,10 @@ app.post('/submit-form', (req, res) => {
   });
 });
 
+app.get("/",(req,res)=>{
+  res.send("api working...");
+})
+
 // Start the server
 app.listen(port, () => {
   console.log(`Server running at http://localhost:${port}`);
